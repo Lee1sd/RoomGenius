@@ -1,4 +1,4 @@
-# RoomGenius
+![image](https://github.com/user-attachments/assets/94783686-a720-432b-8634-a2b4fa7f4eb0)# RoomGenius
 
 # AI 기반 개인 맞춤형 인테리어 디자인 플랫폼 
 
