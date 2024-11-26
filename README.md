@@ -9,16 +9,17 @@
 1. [📖 About](#-about)
 3. [🛠 Features](#-features)
 4. [🎥 Demo](#-demo)
-5. [Team](#team)
-6. [Install](#install)
-7. [Requirements](#requirements)
-8. [Difference](#difference)
-9. [AI](#ai)
-10. [FullStack](#fullstack)
+5. [✨ Service](#-Service)
+6. [Team](#team)
+7. [Install](#install)
+8. [Requirements](#requirements)
+9. [Difference](#difference)
+10. [AI](#ai)
+11. [FullStack](#fullstack)
    	- [Front-End](#front-end)
    	- [Back-End](#back-end)
-11. [기대효과](#기대효과 )
-12. [WorkFlow](#-workflow)
+12. [기대효과](#기대효과 )
+13. [WorkFlow](#-workflow)
 ---
    
 ## 🏡 AI 기반 개인 맞춤형 인테리어 디자인 플랫폼 
@@ -106,22 +107,6 @@ https://github.com/user-attachments/assets/6460d9ae-ac98-4432-aa74-1dcded53cb7b
 </table>
 프롬프트 : dining table made of glass
 
-## Team
-
-HaHaHa
-
-|Name|Department|Contact|
-|---|---|---|
-| Kang Ji Hyun | Major of Bigdata | kangjihyunlo@naver.com|
-| Hwang Seo Yeon | Major of Bigdata |cindyand1q2@gmail.com|
-| Lee Gun Hee | Major of Smart IoT |sjwwiies2829@gmail.com|
-
-coach 
-|Name|Department|Contact|
-|---|---|---|
-| Sung Hoon Lim | Hallym Univ (Prof.) |shlim@hallym.ac.kr|
-
-
 ## ✨ Service
 1. 프로젝트 저장 기능 : 생성된 인테리어 스타일이 사용자가 마음에 드는 경우에는 "내 프로젝트"에 저장할 수 있습니다.
 2. 공유 프로젝트 기능 : 다른 사용자가 생성한 다양한 인테리어 이미지를 확인하고 해당 디자인을 생성하기 위해 작성된 프롬프트를 공유하거나 참고함으로써 새로운 아이디어를 얻고 자신만의 창의적인 인테리어를 구상할 수 있습니다.
@@ -138,6 +123,21 @@ coach
     </td>
   </tr>
 </table>
+
+## Team
+
+HaHaHa
+
+|Name|Department|Contact|
+|---|---|---|
+| Kang Ji Hyun | Major of Bigdata | kangjihyunlo@naver.com|
+| Hwang Seo Yeon | Major of Bigdata |cindyand1q2@gmail.com|
+| Lee Gun Hee | Major of Smart IoT |sjwwiies2829@gmail.com|
+
+coach 
+|Name|Department|Contact|
+|---|---|---|
+| Sung Hoon Lim | Hallym Univ (Prof.) |shlim@hallym.ac.kr|
 
 ## Install
 
