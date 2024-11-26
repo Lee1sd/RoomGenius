@@ -1,0 +1,244 @@
+.galleryintro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #e6e6e6;
+}
+
+.galleryintro .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.galleryintro .gallery-title {
+    position: relative;
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: bold;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gallerycont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 70px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 330px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.image-details {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    gap: 5px;
+    border-radius: 0 0 8px 8px;
+}
+
+.galleryprofile {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50% !important;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 870px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: red;
+}
+
+.modalgallerycontent {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.modalgallerycontent img {
+    width: 500px !important;
+    height: 500px !important;
+    border-radius: 8px;
+}
+
+.sharecomment {
+    width: 100%;
+    max-width: 500px;
+    background-color: #f2f2f2;
+    padding: 9px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.comment-list {
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* 댓글 말풍선 스타일 */
+.comment {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    position: relative;
+    width: fit-content;
+    max-width: 80%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left-color: #e0e0e0;
+    border-right: 0;
+    border-top: 0;
+    margin-top: -5px;
+}
+
+/* 좋아요 섹션 */
+/* Adjust the like section to align the heart icon to the left */
+.like-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align heart icon to the left */
+    width: 15%;
+    gap: 1px;
+}
+.like-icon {
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: #e74c3c;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.like-icon:hover {
+    transform: scale(1.2);
+}
+
+.like-count {
+    font-size: 0.8rem;
+    color: #333;
+    text-align: center;
+}
+
+.textarea-wrapper {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* textarea 개별 스타일 */
+.comment-textarea {
+    height: 50px;
+    width: 100%;
+    resize: none;
+    border-radius: 8px;
+    padding: 9px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.commentbutton {
+    padding: 15px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    min-width: 90px;
+}

@@ -1,0 +1,219 @@
+
+.controler {
+   background-color: white;
+   position: relative;
+   width: 362px;
+   height: 850px;
+   border-radius: 20px;
+   transform: translateX(25%) translateY(25px);
+}
+
+.stepone, .steptwo, .steplast {
+   position: relative;
+   width: 188px;
+   height: 41px;
+
+   background-color: #E3E1E1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.stepone{
+   transform: translateY(50px);
+}
+
+.steptwo{
+   transform: translateY(90px);
+}
+
+.steplast{
+   transform: translateY(190px);
+
+}
+
+.uploadimage{
+   position: relative;
+   background: #FFFFFF;
+   border: 1px dashed #000000;
+   border-radius: 20px;
+   transform: translateY(70px) translateX(20%);
+   box-sizing: border-box;
+   width: 253px;
+   height: 96px;
+   display:grid;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+
+.upload img {
+   max-width: 100%; /* 이미지 너비를 부모에 맞추기 */
+   max-height: 100%; /* 이미지 높이를 부모에 맞추기 */
+   object-fit: contain; /* 이미지 비율을 유지하며 영역에 맞춤 */
+}
+
+.createbutton{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.lastcreate,.lastsave {
+   transform: translateY(220px);
+   background-color: #AFC4ED;
+   border: none;
+   width: 268px;
+   height: 40px;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.twosolution{
+   display: flex;
+   flex-direction: column;
+   transform: translateY(100px) translateX(40px);
+
+}
+
+#checksoultion{
+   width: 268px;
+   height: 40px;
+   border-radius: 13px; /* 선택 사항: 둥근 모서리 */
+   border: 1px solid #ccc; /* 선택 사항: 테두리 스타일 */
+}
+
+
+.tworoom{
+   display: flex;
+   flex-direction: column;
+   transform: translateY(120px) translateX(40px);
+}
+
+.tworoom textarea, .disignstyle textarea{
+   width: 268px;
+   height: 60px;
+   border-radius: 13px; /* 선택 사항: 둥근 모서리 */
+   border: 1px solid #ccc;
+   margin-top: 5px;
+}
+
+.disignstyle{
+   display: flex;
+   flex-direction: column;
+   transform: translateY(140px) translateX(40px);
+}
+
+.powercontrol{
+   display: flex;
+   flex-direction: column;
+   transform: translateY(160px) translateX(40px);
+   width: 268px;
+   gap: 10px;
+}
+
+.powercontrol input{
+   height: 2px;
+   background: #AFC4ED;
+
+}
+
+.wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   transform: translateY(200px);
+ }
+ #switch {
+   position: absolute;
+   /* hidden */
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+ }
+
+ .switch_label {
+   position: relative;
+   cursor: pointer;
+   display: inline-block;
+   width: 58px;
+   height: 20px;
+   background: #fff;
+   border: 1px solid rgb(133, 133, 133);
+   border-radius: 20px;
+   transition: 0.2s;
+ }
+ .switch_label:hover {
+   background: #efefef;
+ }
+ .onf_btn {
+   position: absolute;
+   top:3px;
+   left: 3px;
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   border-radius: 20px;
+   background: #AFC4ED;
+   transition: 0.2s;
+ }
+
+ /* checking style */
+ #switch:checked+.switch_label {
+   background: #AFC4ED;
+   border: 1px solid rgb(133,133,133);
+ }
+
+ #switch:checked+.switch_label:hover {
+   background: #AFC4ED;
+ }
+
+ /* move */
+ #switch:checked+.switch_label .onf_btn {
+   left: 40px;
+   background: #fff;
+   box-shadow: 1px 2px 3px #00000020;
+ }
+
+ .uploadimage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.up {
+    font-size: 13px;
+    color: #333;
+    transform: translateY(150%);
+}
+
+ .arrow {
+    position: absolute;
+    top: 10px; /* 텍스트 위에 위치 */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #8ab3de;
+    animation: bounce 1.5s infinite; /* 화살표에 애니메이션 적용 */
+}
+
+ /* 애니메이션 설정 */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}

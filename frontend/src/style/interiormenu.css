@@ -1,0 +1,109 @@
+.Interiorcont {
+    display: flex;              /* Flexbox 사용 */
+    flex-direction: column;     /* 세로 방향으로 정렬 */
+    position: relative;  
+    z-index: 1;      
+}
+.inteProject, .inteshare, .intedel, .Projectdesign,
+.textProjectm, .paintProject, .painttwoProject{
+    display: flex;
+    align-items: center;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    transform: translateX(25%);
+    align-items: center;
+}
+
+.Probox, .sharebox, .delbox, .designbox,
+.textpbox, .Paintbox, .Painttwobox{
+    width: 47px;
+    height: 47px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.inteProject, .inteshare, .intedel, .Projectdesign,
+.textProjectm, .paintProject, .painttwoProject{
+  position: relative;
+  top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Probox img.folder, .sharebox img.share, .delbox img.Del,
+.designbox img.pen, .textpbox img.text, .Paintbox img.paint,
+.Painttwobox img.painttwo{
+    width: 100%;  /* 부모 박스 크기에 맞게 */
+    height: 35%; /* 부모 박스 크기에 맞게 */
+    object-fit: contain; /* 이미지가 잘리지 않고 부모 박스에 맞도록 */
+}
+
+.inteProject:hover, .inteshare:hover, .intedel:hover{
+  color: #90B794;
+}
+
+.inteProject:hover .Probox,
+.inteshare:hover .sharebox,
+.intedel:hover .delbox,
+.Projectdesign:hover .designbox,
+.textProjectm:hover .textpbox,
+.paintProject:hover .Paintbox,
+.painttwoProject:hover .Painttwobox
+{
+    background-color: #E7EFFF; /* 상자 배경색 변경 */
+}
+
+.interiorline2 {
+    position: absolute;
+    width: 70px;
+    height: 100vh;
+    left: 0;
+    background-color: white;
+    display: flex;
+
+}
+
+.Links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    gap: 30px;
+}
+
+.Links:hover{
+    color: #90B794;
+}
+
+.tooltiptext {
+    visibility: hidden; /* 기본적으로 숨김 */
+    width: 140px; 
+    background-color: rgb(56, 55, 55); /* 배경색 */
+    color: #fff; /* 텍스트 색상 */
+    text-align: center; 
+    border-radius: 5px; 
+    padding: 5px;  /* 패딩 */
+    position: absolute; /* 절대 위치 */
+    bottom: 20%; /* 이미지 기준으로 위치 조정 */
+    left: 110%; /* // */
+    opacity: 0.6;
+}
+
+.image-container:hover .tooltiptext {
+    visibility: visible;
+    position: absolute;
+}
+
+
+.image-container {
+    position: relative; 
+}

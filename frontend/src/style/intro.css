@@ -1,0 +1,173 @@
+.html,
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.Introline {
+    position: relative;
+    height: 1px; /* 또는 원하는 높이 */
+    top: 8px;
+    width: 95%;
+    border:none;
+    background-color: black;
+}
+
+.introContainer {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.introtitle{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    transform: translateX(4%) translateY(10%);
+    font-size: 30px;
+    gap: 30px;
+}
+
+.introtitle p{
+    position: relative;
+    font-size: 25px;
+    top: -30px;
+}
+/*
+.highlight {
+    color: #578BEB; 원하는 색상 코드로 변경
+}*/
+
+/* 애니메이션 효과를 위한 CSS */
+/* 애니메이션 효과를 위한 CSS */
+.highlight {
+    color: #578BEB;
+    display: inline-block;
+    opacity: 0;
+    animation: typing 2.5s forwards;
+    animation-iteration-count: infinite; /* 애니메이션 무한 반복 */
+}
+
+.highlight:nth-child(2) {
+    animation-delay: 0s;
+}
+.highlight:nth-child(3) {
+    animation-delay: 0.1s;
+}
+.highlight:nth-child(5) {
+    animation-delay: 0.2s;
+}
+.highlight:nth-child(6) {
+    animation-delay: 0.3s;
+}
+.highlight:nth-child(7) {
+    animation-delay: 0.4s;
+}
+.highlight:nth-child(8) {
+    animation-delay: 0.5s;
+}
+
+@keyframes typing {
+    0% { opacity: 0; transform: translateY(-10px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(10px); }
+}
+/*
+.Introstart{
+    position: relative;
+    width: 250px;
+    height: 88px;
+    border-radius: 10px;
+    border: none;
+    background-color: #578BEB;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}*/
+
+.Introstart {
+    position: relative;
+    width: 250px;
+    height: 88px;
+    border-radius: 44px; /* 둥근 모서리 */
+    border: none;
+    background-color: #578BEB;
+    font-size: 26px; /* 글자 크기를 조금 줄여서 여유 공간 확보 */
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* 텍스트와 아이콘 사이 간격 */
+    font-weight: bold;
+}
+
+.Introstart::after {
+    content: "➔"; /* 원하는 이모지나 아이콘으로 대체 가능 */
+    font-size: 25px;
+    margin-left: 8px;
+}
+
+.Dream {
+    font-size: 40px;
+    font-family: 'Arial', sans-serif; /* 원하는 글씨체로 변경 */
+    font-weight: bold; /* 글자를 두껍게 설정 */
+    transform: translateY(200px);
+}
+
+
+.Dreambox {
+    transform: translateY(270px);
+    display: flex; /* Flexbox 활성화 */
+    flex-direction: row; /* 자식 요소들을 가로로 배치 */
+    justify-content: center; /* 자식 요소들을 중앙 정렬 */
+}
+
+.Dreamone, .Dreamtwo, .Dreamthree {
+    width: 340px; /* 고정 너비 */
+    height: 200px; /* 고정 높이 */
+    background-color: #D9D9D9; /* 배경색 설정 */
+    margin: 0 60px; /* 요소 간의 가로 여백 설정 */
+    display: flex; /* 내부 콘텐츠 정렬을 위해 Flexbox 사용 */
+    flex-direction: row; /* 내부 요소들을 세로로 정렬 */
+    align-items: center; /* 내부 콘텐츠 중앙 정렬 */
+    justify-content: center; /* 내부 콘텐츠 중앙 정렬 */
+    border-radius: 10px;
+
+}
+
+.Dreambox img{
+    object-fit: contain;
+    width: 45%;
+    height: 45%;
+    float: left;
+    transform: translateX(-10%);
+}
+
+.Dreamone p, .Dreamtwo p , .Dreamthree p{
+    font-size: 16px;
+    transform: translateX(-15%);
+    text-align: left;
+}
+
+.introvi {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-1%);
+    gap: 140px;
+}
+
+.introVideo {
+    display: flex;
+    align-items: center;
+    transform: translateY(15%);
+    border-radius: 20px;
+}
+
+.introVideo video {
+    border-radius: 10px; /* 원하는 만큼 값을 조정하여 둥근 정도를 설정 */
+    overflow: hidden; /* 둥근 모서리 안에 콘텐츠를 잘리게 함 */
+}

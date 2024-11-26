@@ -1,0 +1,74 @@
+.title2cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 400px;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    gap: 50px; /* 간격을 줄입니다 50 */
+
+}
+
+.titlestart{
+    margin: 50px;
+}
+
+.titlestart, .titlestart2, .titlestart3{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.titlestart2{
+    gap: 100px;
+}
+
+.startimage{
+    height: 400px;
+    width: 650px;
+    border-radius: 20px;
+}
+
+.explain{
+    height: 400px;
+    width: 650px;
+    border-radius: 10px;
+}
+
+.title2text, .title2text2, .title3text3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title2button, .title2button2, .title3button3{
+    position: relative;
+    width: 120px;
+    height: 50px;
+    background-color: #578BEB;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.title2text h3, .title2text2 h3, .title3text3 h3{
+    font-size: 40px;
+
+}
+
+.title2button a, .title2button2 a, .title3button3 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.two-line-text {
+    max-width: 700px; /* Adjust this width to control where it breaks */
+    line-height: 1.5; /* Optional: adjust line spacing */
+}
+
+.blue-text {
+    color:  #578BEB; /* 파란색으로 설정 */
+}

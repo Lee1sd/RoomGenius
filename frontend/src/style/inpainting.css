@@ -1,0 +1,204 @@
+.PaintintTwocont{
+    background-color: #E1E3E8;
+    width: 100%;
+    height: 100vh;
+}
+
+.PTwodraw{
+    background-color: white;
+   position: relative;
+   width: 450px;
+   height: 410px;
+   border-radius: 20px;
+   transform: translateX(22%) translateY(43px);
+}
+
+.Ptwostepone, .Ptwosteplast{
+    position: relative;
+    width: 188px;
+    height: 41px;
+    background-color: #E3E1E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ptwoCanvasDrawing{
+   position: relative;
+   transform: translateX(5%) translateY(10%);
+}
+
+ .Ptwostepone{
+    transform: translateY(30px);
+ }
+
+ .Ptwosteplast{
+    transform: translateY(50px);
+ }
+
+ .Ptwosteptwocont{
+
+    display: flex;
+    flex-direction: column;
+ }
+
+ .Ptwosteptwoimage {
+   position: relative;
+   top: 40px;
+   margin-left: 50px;
+   text-align: center;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between; /* 두 박스를 양쪽 끝에 배치 */
+   gap: 30px; /* 두 박스 사이의 간격 설정 */
+   padding: 10px; /* 내부 여백 추가 */
+   width: 360px; /* 전체 너비 지정 */
+}
+
+.inpaintingimage, .inpaintingsend {
+   width: 210px;
+   height: 130px;
+   position: relative;
+   border: 1px dashed #000000;
+   text-align: center;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center; /* 수평 중앙 정렬 */
+   align-items: center; /* 수직 중앙 정렬 */
+   overflow: hidden; /* 이미지가 박스 크기를 넘지 않도록 설정 */
+}
+
+.inup {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+}
+
+.inupload {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+.inpaint-innerRight label{
+   text-align: center;
+}
+
+.uploaded-image, .Canvas-Drawing {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 20px;
+}
+.inpaintLast-inner{
+   display: flex;
+   flex-direction:row ;
+   position: relative;
+   top: 50px;
+}
+.inpaint-innerleft{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   top: 10px;
+   left: 25px;
+}
+.inpaintLast-inner textarea{
+    position: relative;
+    border-radius: 10px;
+    resize: none;
+
+}
+
+.inpaint-control input{
+   height: 2px;
+   width: 130px;
+}
+
+.inpaint-innerRight{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   left: 40px;
+}
+
+.inpaintwrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform:translateX(7%) translateY(20px);
+   gap: 10px;
+ }
+ #inpaintswitch {
+   position: absolute;
+   /* hidden */
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+ }
+
+ .inpaint_label {
+   position: relative;
+   cursor: pointer;
+   display: inline-block;
+   width: 58px;
+   height: 20px;
+   background: #fff;
+   border: 1px solid rgb(133, 133, 133);
+   border-radius: 20px;
+   transition: 0.2s;
+ }
+ .inpaint_label:hover {
+   background: #efefef;
+ }
+ .inpaint_btn {
+   position: absolute;
+   top:2px; /**/
+   left: 3px;
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   border-radius: 20px;
+   background: #AFC4ED;
+   transition: 0.2s;
+ }
+
+ /* checking style */
+ #inpaintswitch:checked+.inpaint_label {
+   background: #AFC4ED;
+   border: 1px solid rgb(133,133,133);
+ }
+
+ #inpaintswitch:checked+.inpaint_label:hover {
+   background: #AFC4ED;
+ }
+
+ /* move */
+ #inpaintswitch:checked+.inpaint_label .inpaint_btn {
+   left: 30px;
+   background: #fff;
+   box-shadow: 1px 2px 3px #00000020;
+ }
+
+ .inpaintbutton{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   gap: 15px;
+   transform: translateX(17px) translateY(40px);
+}
+
+.inpaintcreate, .inpaintsave{
+   background-color: #AFC4ED;
+    border: none;
+    width: 110px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+

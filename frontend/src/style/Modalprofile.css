@@ -1,0 +1,91 @@
+.modalprofile-overlay{
+    position: fixed;
+    top: -200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+   
+}
+.changecont{
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* 화면 전체에 고정 */
+    width: 440px;
+    height: 700px;
+    top: 200px;
+    left: 50%; /* 화면 가운데 정렬 */
+    transform: translateX(-50%); /* 너비의 절반만큼 왼쪽으로 이동 */
+    background-color: white;
+}
+
+.changeinfocont {
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    align-items: center; /* 내부 요소들을 가로 방향으로 중앙 정렬 */
+}
+
+.changeinfocont h3 {
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+}
+
+.changename,.changephonebox{
+   display: flex;
+   flex-direction: column;
+}
+
+.changenamebox, .phonenamebox{
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+
+.changecheck{
+    width: 350px;
+    height: 50px;
+    position: relative;
+    font-size: 16px;
+    background-color: #AFC4ED;
+    border: none;
+    top: 40px;
+}
+
+.changeimage {
+    margin-bottom: 20px; /* 이미지와 다른 요소 간의 간격 조정 */
+}
+
+.user-icon, .preview-image {
+   position: relative;
+   height: 170px;
+   width: 170px;
+   
+}
+
+.preview-image {
+    border-radius: 50%;
+}
+
+.close-icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer; 
+    right: 11px;
+    top: 14px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between; /* 좌우로 배치 */
+    align-items: center; /* 수직으로 중앙 정렬 */
+    margin-bottom: 20px; /* 아래 간격 추가 */
+}

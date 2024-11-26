@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR&family=Jua&display=swap');
+
+/* 부모 컨테이너의 정렬 */
+.slide-container {
+  display: flex;
+  gap: 100px; /* 슬라이더 간의 간격 */
+  align-items: center; /* 가로 가운데 정렬 */
+  justify-self: center;
+  transform: translateX(-23%);
+
+}
+
+
+.comparison-slider img {
+  margin-top: 40px;
+  width: 100%;      /* 슬라이더 너비에 맞게 조정 */
+  height: 100%;     /* 슬라이더 높이에 맞게 조정 */
+  object-fit: cover; /* 이미지가 컨테이너에 맞게 채워지도록 */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.comparison-slider{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 500px;
+  width: 800px;
+  height: 750px;
+  overflow: hidden;
+  outline: none;   /* 클릭 시 생기는 선택 효과 제거 */
+  user-select: none; /* 텍스트 선택 방지 */
+  -webkit-user-drag: none; /* 드래그 효과 제거 */
+  margin: 30px 0;
+  border-radius: 20px;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  left: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: ew-resize;
+  transform: translateX(-6%);
+}
+
+.before, .after{
+  width: 300px;
+}
+
+.comparison-slider > figure {
+  margin: 0;
+  overflow: hidden; /* 내부 이미지를 잘라냄 */
+  border-radius: inherit; /* 부모의 border-radius 상속 */
+}
+
+
+.comparison-slider > figure:last-of-type {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  height: 100%;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+
+}
+
+.comparison-slider > figure > img {
+  width: auto;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.comparison-slider > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  padding: 5px 10px;
+  line-height: 1.5;
+  background: rgba(30, 30, 30, 0.7);
+  max-width: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #f1f1f1;
+  transition: opacity 0.35s, transform 0.35s;
+
+}
+
+.comparison-slider > figure:last-of-type > figcaption {
+  right: 0;
+
+}
+
+.comparison-slider > figure > figcaption.hide {
+  opacity: 0;
+  transform: translate3d(-10px, 0, 0);
+}
+
+.comparison-slider > figure:last-of-type > figcaption {
+  z-index: 1;
+  left: 92%;
+
+}
+
+.comparison-slider > figure:last-of-type > figcaption.hide {
+  transform: translate3d(10px, 0, 0);
+}
+
+.comparison-slider > .slider {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 10%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #f1f1f1;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  text-align: center;
+  cursor: grab;
+}
+
+.comparison-slider.dragging,
+.comparison-slider.dragging > .slider {
+  cursor: grabbing;
+}
+
+.comparison-slider.dragging > .slider {
+  background: #d2abff;
+}
+
+.comparison-slider > .slider > svg {
+  pointer-events: none;
+}
+
+.comparison-slider .slider {
+  position: absolute;
+  transform: translateX(-45px); /* 슬라이더를 오른쪽으로 10px 이동 */
+  cursor: pointer;
+}
+
+
+.contry img{
+  height: 90px;
+  width: 90px;
+  transition: transform 0.3s ease;
+  right: 330px;
+  position: relative;
+  box-shadow: 5px 5px 10px gray;
+  border-radius: 50%;
+}
+
+.contry img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contry{
+  position: relative;
+  top: 515px;
+  left: 260px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+}
+
+.contry div {
+  display: grid;
+  grid-template-columns: auto 90px; /* 첫 번째 열은 텍스트, 두 번째 열은 이미지 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: -20px; /* 텍스트와 이미지 사이 간격 */
+  font-weight: 600;
+
+}
+
+.contry h2 {
+  position: relative;
+  left: -280px;
+  max-width: 620px; /* 글자 영역 고정 */
+  font-size: 26px;
+  min-height: 60px;/* 글자 영역 고정 */
+  white-space: nowrap;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+

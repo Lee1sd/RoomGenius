@@ -1,0 +1,81 @@
+.inpaintingCanvas {
+    display: flex;
+
+}
+
+.InpaintingjsCanvas {
+    margin-right: 20px; /* 캔버스와 도구 상자 사이 여백 */
+    border-radius: 5%;
+    flex-direction: column;
+    object-fit: cover;
+    position: relative;
+    top: -20px;
+}
+
+.Inpaintingtoolbox {
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* 도구 상자를 세로로 배치 */
+    align-items: center;
+    top: 360px;
+}
+
+.upInpainting{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+/*지우개, 펜 조정*/
+.Inpaintingcolors {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    transform: translateX(590%) translateY(-300%);
+}
+
+.inColor {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.ImageUpload {
+    margin-top: 30px; /* 위치를 아래로 내리기 위해 추가 */
+}
+
+.inpainting-send, #inpMode{
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.canimage{
+    display: none;
+}
+
+.cavansbitton{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #AFC4ED;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cavansbitton:hover{
+    background-color: #8aa7d9;
+}
+
+.cavansbitton:active{
+    background-color: #7290b8;
+}

@@ -1,0 +1,65 @@
+/* src/components/Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: -250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+  }
+  
+  .modal-content h3, .modal-content p{
+    position: relative;
+    bottom: 30px;
+
+  }
+  
+  .modal-content p{
+    text-align: left;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-content h3{
+    font-size: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 20px;
+    width: 600px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+  
+  .modal-buttons{
+    display: flex;
+    gap: 10px; 
+    justify-content: center; 
+}
+
+.Roommodalclose{
+  width: 80px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid;
+}
+
+.Roommodalfirm{
+  width: 80px;
+  height: 40px;
+  background-color: #578BEB;
+  border: none;
+}

@@ -1,0 +1,94 @@
+
+
+.Sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 가로 중앙 정렬 */
+    justify-content: center; /* 세로 중앙 정렬 */
+    background-color: #E1E3E8;
+    height: 80vh;
+    position: relative;
+}
+
+.S-under {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.SignCheck {
+    display: flex; /* 가로로 나란히 배치 */
+    flex-direction: column; /* 체크박스와 레이블을 가로로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    margin-top: 20px; /* 위쪽 여백 */
+
+}
+
+.SignCheck input[type="checkbox"],
+.SignCheck label {
+    position: relative;
+    left: 70px; /* 체크박스와 레이블을 오른쪽으로 이동 */
+    top:-40px;
+
+}
+
+.Signupid, .Signuppass{
+    position: relative;
+    height: 50px;
+    width: 474px;
+    z-index: 1;
+}
+
+.Signfooter{
+    position: relative;
+    top: -310px;
+    display: flex;
+    text-align: center;
+    line-height: 2em;
+    height: 200px;
+    width: 100%;
+}
+
+.Signupline2{
+    position: absolute;
+    width: 95%;
+    height: 2px;
+    top: 600px;
+    border: none;
+    /* border를 사용하지 않음 */
+    background-color: #FFFFFF;
+    /* 배경색으로 선을 만듦 */
+}
+
+.Signlogin{
+    position: relative;
+    width: 480px;
+    height: 50px;
+    top: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+
+.CheckboxWrapper {
+    position: relative;
+    display: flex;
+    align-items: center; /* 체크박스와 레이블을 가로로 정렬하고 수직으로 중앙 정렬 */
+    gap: 5px; /* 체크박스와 레이블 사이 간격 */
+    right:240px;
+    margin-top: 20px;
+}
+
+.LinkSign {
+    position: relative;
+    top:70px;
+    text-decoration: none;
+    color: black;
+    right:200px;
+}
+

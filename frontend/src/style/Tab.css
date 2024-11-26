@@ -1,0 +1,218 @@
+:root {
+  --primary-color: #e6eef9;
+  --secondary-color: #185ee0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.tabcontainer {
+  position: relative;
+  left: 0;
+  top: 500px;
+  right: -30px;
+  bottom: 0;
+  border-radius: 30px;
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  padding: 0.75rem;
+  border-radius: 40px; /* Just a high number to create pill effect */
+  z-index: 1;
+  border: 1px solid rgb(157, 188, 255);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 300px;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 99px; /* Just a high number to create pill effect */
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+  z-index: 2;
+}
+
+input[type="radio"]:checked + label {
+  color: var(--primary-color);
+}
+
+input[type="radio"]:checked + label .notification {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+input[id="radio-1"]:checked ~ .glider {
+  transform: translateX(10%);
+}
+
+input[id="radio-2"]:checked ~ .glider {
+  transform: translateX(130%);
+}
+
+input[id="radio-3"]:checked ~ .glider {
+  transform: translateX(250%);
+}
+
+input[id="radio-4"]:checked ~ .glider {
+    transform: translateX(370%);
+  }
+
+.glider {
+  position: absolute;
+  display: flex;
+  height: 65px;
+  width: 250px;
+  z-index: 0;
+  background-color: var(--secondary-color);
+  border-radius: 10px; /* Just a high number to create pill effect */
+  transition: 0.25s ease-out;
+  top: 16px;
+}
+
+
+/*슬라이더 전체 위치 조정*/
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  bottom: 250px;
+
+}
+.Tabh3{
+  position: relative;
+  top: 500px;
+  font-size: 30px
+}
+
+.Tablanguage {
+  position: relative;
+  top: 560px;
+  font-size: x-large;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Tablanguage-span {
+  position: relative;
+  display: inline-block;
+}
+
+.Tablanguage-span2 {
+  position: relative;
+  display: inline-block;
+}
+
+
+.Tablanguage-span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #a6c5ff, transparent 40%);
+  z-index: -1;
+  border-radius: 5px;
+  width: 520px;
+  left: 40px;
+}
+
+.Tablanguage-span2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #a6c5ff, transparent 40%);
+  z-index: -1;
+  border-radius: 5px;
+  width: 600px;
+  left: -3px;
+}
+
+
+
+.Tablanguage > .Tablanguage-span {
+  display: inline-block;
+  overflow: hidden;
+  opacity: 1; /* 초기 상태 */
+  border-right: 2px solid #007BFF; /* 파란색 테마 */
+  white-space: nowrap;
+
+}
+
+.Tablanguage > .Tablanguage-span2 {
+  display: inline-block;
+  overflow: hidden;
+  opacity: 0; /* 초기 상태 */
+  border-right: 2px solid #007BFF; /* 파란색 테마 */
+  white-space: nowrap;
+
+}
+
+.Tablanguage-span.animate {
+  opacity: 1; /* 보일 때 활성화 */
+  animation: typing-Tablanguage-span 1s steps(20,end) forwards, blink-Tablanguage-span 0.3s step-end infinite;
+}
+
+.Tablanguage-span2.animate {
+  opacity: 1; /* 보일 때 활성화 */
+  animation: typing-Tablanguage-span 1s steps(20,end) forwards, blink-Tablanguage-span 0.3s step-end infinite;
+
+}
+
+@keyframes typing-Tablanguage-span {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-Tablanguage-span2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+@keyframes blink-Tablanguage-span {
+  from {
+    border-color: #007BFF;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+
+@keyframes blink-Tablanguage-span2 {
+  from {
+    border-color: #007BFF;
+  }
+  to {
+    border-color: transparent;
+  }
+}

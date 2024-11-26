@@ -1,0 +1,146 @@
+
+
+.MyproContent {
+    width: 100%;
+    padding: 20px;
+}
+
+.Mypro {
+    background-color: #E1E3E8;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.MyproContent {
+    position: absolute;
+    width: 93%;
+    padding: 20px;
+    background-color: white;
+    top: 130px;
+    left: 5.3%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.saved-projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.project-card {
+    width: 18%; /* 가로로 5개씩 배치되도록 설정 */
+    max-width: 200px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 8px;
+}
+
+.saved-images-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: start;
+    padding: 40px;
+    transform: translateX(70px);
+}
+
+.saved-image-item {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 애니메이션 효과 추가 */
+    cursor: pointer;
+}
+.saved-image-item:hover {
+    transform: scale(1.05); /* 약간 확대 */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* 그림자 강화 */
+}
+
+
+.saved-image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.myproname {
+    margin-top: -45px;
+    text-align: center;
+    padding: 30px 0;
+    color: #333333;
+}
+
+.myproname h3 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+
+/* 모달 오버레이 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 모달 콘텐츠 */
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 닫기 버튼 */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 25px; /* 작게 설정 */
+    color: #555;
+    cursor: pointer;
+    padding: 0;
+}
+
+.close-button:hover {
+    color: #ff0000;
+}
+
+/* 이미지 */
+.modal-content img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
