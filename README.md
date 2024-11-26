@@ -87,6 +87,26 @@ https://github.com/user-attachments/assets/678f76a9-7f95-4c8f-a18e-a2cb9efe93a6
 
 https://github.com/user-attachments/assets/6460d9ae-ac98-4432-aa74-1dcded53cb7b
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img width="330" src="https://github.com/user-attachments/assets/53209525-6b48-4b5f-9a18-0a123cf53cdc" alt="이미지 원본">
+      <br>
+      <strong>이미지 원본</strong>
+    </td>
+    <td align="center">
+      <img width="330" src="https://github.com/user-attachments/assets/7cf1ef78-893a-4908-b5c7-6fae4d39bb6c" alt="마스크 이미지">
+      <br>
+      <strong>이미지 원본</strong>
+    </td>
+    <td align="center">
+      <img width="330" alt="이미지투결과" src="https://github.com/user-attachments/assets/c42b81cb-b114-4efb-a7ac-f846d5f5533e">
+      <br>
+
+      <strong>생성된 결과</strong>
+    </td>
+  </tr>
+</table>
                                  
 ## Team
 
