@@ -94,7 +94,7 @@ https://github.com/user-attachments/assets/6460d9ae-ac98-4432-aa74-1dcded53cb7b
       <strong>이미지 원본</strong>
     </td>
     <td align="center">
-      <img width="330" src="https://github.com/user-attachments/assets/7cf1ef78-893a-4908-b5c7-6fae4d39bb6c" alt="마스크 이미지">
+      <img width="330" src="https://github.com/user-attachments/assets/d96d0bdb-8fbf-47db-a76e-037b789e2767" alt="마스크 이미지">
       <br>
       <strong>마스크 이미지</strong>
     </td>
