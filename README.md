@@ -54,7 +54,6 @@ https://github.com/user-attachments/assets/c5ff8baf-8d9d-416d-94fe-123eb0fe0c17
       <img width="330" src="https://github.com/user-attachments/assets/7a0c1d5f-3aa8-4082-933f-e8edbc084854" alt="이미지투원본">
       <br>
       <strong>이미지 원본</strong>
-    </td>
     <td align="center">
       <img width="330" alt="이미지투결과" src="https://github.com/user-attachments/assets/7a50e314-50fa-4c5d-a4c8-ba141ee8421e">
       <br>
@@ -97,12 +96,11 @@ https://github.com/user-attachments/assets/6460d9ae-ac98-4432-aa74-1dcded53cb7b
     <td align="center">
       <img width="330" src="https://github.com/user-attachments/assets/7cf1ef78-893a-4908-b5c7-6fae4d39bb6c" alt="마스크 이미지">
       <br>
-      <strong>이미지 원본</strong>
+      <strong>마스크 이미지</strong>
     </td>
     <td align="center">
-      <img width="330" alt="이미지투결과" src="https://github.com/user-attachments/assets/c42b81cb-b114-4efb-a7ac-f846d5f5533e">
+      <img width="330" alt="이미지투결과" src="https://github.com/user-attachments/assets/c42b81cb-b114-4efb-a7ac-f846d5f5533e" alt="생성된 결과">
       <br>
-
       <strong>생성된 결과</strong>
     </td>
   </tr>
