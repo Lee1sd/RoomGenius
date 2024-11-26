@@ -82,7 +82,6 @@ https://github.com/user-attachments/assets/678f76a9-7f95-4c8f-a18e-a2cb9efe93a6
 
 -----------------------------------------------------------------------
 ### [inpainting을 통한 방 이미지 생성]
-프롬프트 : dining table made of glass
 
 https://github.com/user-attachments/assets/6460d9ae-ac98-4432-aa74-1dcded53cb7b
 
@@ -105,7 +104,8 @@ https://github.com/user-attachments/assets/6460d9ae-ac98-4432-aa74-1dcded53cb7b
     </td>
   </tr>
 </table>
-                                 
+프롬프트 : dining table made of glass
+
 ## Team
 
 HaHaHa
